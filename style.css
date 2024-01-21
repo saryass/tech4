@@ -1,0 +1,1688 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/***************************************************/
+/* hero in body */
+/***************************************************/
+.hero {
+    display:flex;
+    /* to align and set his elements (navbar-container) (main.container) (reklam) next to each other*/
+}
+
+/***************************************************/
+/* navbar-container in hero*/
+/***************************************************/
+.navbar-container {
+    /* border: 3px solid green; */
+    /* position: fixed; */
+    width: 16%;
+    height: 100vh;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    /* to align his elements (nav-logo),(nav-list),(search-box) */
+}
+
+/***************************************************/
+/* nav-logo-box in navbar-container*/
+/***************************************************/
+.nav-logo-box {
+    /* border: 1px solid black; */
+    height: 21%;
+}
+
+.nav-logo-box li {
+    /* background-color: pink; */
+    margin-bottom: 10px;
+    /*to make a vertical space btw elements (logo, Join techCrunch+, Login)*/
+    padding-left: 30px;
+}
+
+.logooo {
+    /* background-color: red; */
+    margin-top: 30px;
+    /* To make a vertical space btw the (.logooo)element and top border of (.nav-logo) */
+}
+
+.nav-logo-box ul {
+    list-style: none;
+    position: fixed;
+    /* VERY IMP NOTE: to fix navbar-container, I must do (position:fixed) for the (.nav-list-box ul),(.nav-logi-box ul),and (.search) element individually to be able to use (display:flex)for the (main-container).. if i use (position:fixed) for (navbar-container), the flex-box won't apply on the (main-container). that is why i did position for those 3 elements of (navbar-container) individually ;)*/
+}
+
+.logo {
+    width: 60px;
+    height: 30px;
+}
+
+.nav-logo-box ul a {
+    text-decoration: none;
+    font-size: 1.09em;
+    color: #777;
+}
+
+.nav-logo-box .orange {
+    color: #fdc006;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.nav-logo-box li:nth-child(3) a:hover {
+    color: rgb(22, 228, 22);
+}
+
+.nav-logo-box li:nth-child(2) a:hover {
+    color: rgba(230, 115, 21, 0.712);
+}
+
+/***************************************************/
+/* search-box in navbar-container*/
+/***************************************************/
+.search-box {
+    /* border: 1px solid blue; */
+    height: 12%;
+    display: flex;
+    align-items: center;
+    /* to align his elements (text and icon)vertically center at the box */
+}
+
+.search {
+    /* background-color: red; */
+    text-decoration: none;
+    font-size: 1.09em;
+    color: #777;
+    padding-left: 30px;
+    position: fixed;
+    /* VERY IMP NOTE: to fix navbar-container, I must do (position:fixed) for the (.nav-list-box ul),(.nav-logi-box ul),and (.search) element individually to be able to use (display:flex)for the (main-container).. if i use (position:fixed) for (navbar-container), the flex-box won't apply on the (main-container). that is why i did position for those 3 elements of (navbar-container) individually ;)*/
+}
+
+.icon {
+    color: #777;
+    margin-left: 6px;
+    /* To make a space between icon and the text */
+}
+
+/***************************************************/
+/* nav-list-box in navbar-container*/
+/***************************************************/
+.nav-list-box {
+    /* border: 1px solid black; */
+    height: 67%;
+}
+
+.nav-list-box li {
+    /* background-color: pink; */
+    margin-bottom: 10px;
+    /*to make a vertical space btw his elements*/
+    padding-left: 30px;
+}
+
+.nav-list-box ul {
+    list-style: none;
+    position: fixed;
+    /* VERY IMP NOTE: to fix navbar-container, I must do (position:fixed) for the (.nav-list-box ul),(.nav-logi-box ul),and (.search) element individually to be able to use (display:flex)for the (main-container).. if i use (position:fixed) for (navbar-container), the flex-box won't apply on the (main-container). that is why i did position for those 3 elements of (navbar-container) individually ;)*/
+}
+
+.nav-list-box ul a {
+    text-decoration: none;
+    color: #777;
+    font-size: 1.09em;
+}
+
+.nav-list-box li:nth-child(1) a:hover {
+    color: rgb(235, 162, 28);
+}
+
+.nav-list-box li:not(:first-child) a:hover {
+    color: rgb(22, 228, 22);
+}
+/*************************************************/
+/* main-container  in  hero */
+/************************************************/
+.main-container {
+    /* border:2px solid blue; */
+    width: 70%;
+}
+
+/*************************************************/
+/* content-container in main-container */
+/************************************************/
+.content-container {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* to allign and set his elements (Rows) in a column */
+}
+
+/*************************************************/
+/* Row1 in content-container */
+/************************************************/
+.row1 {
+    /* border: 2px dashed red; */
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    /* to align his elements (content1) & (content2) set next to eachother */
+    margin-bottom: 40px;
+    /* to make a space btw row1 and row2 */
+}
+
+
+/*************************************************/
+/* content1 in Row1*/
+/************************************************/
+.content1 {
+    /* border: 1px solid black; */
+    /* background-color: yellow; */
+    padding-top: 5px;
+    width: 60%;
+    transition: 0.25s;
+}
+
+.content1:hover {
+    opacity: 0.6;
+}
+
+.block1-a h2 {
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 0.4em;
+    cursor: pointer;
+}
+
+.block1-a h3 {
+    color: #999;
+    font-size: 1.16em;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.3em;
+}
+
+.block1-a .author1 {
+    color: #333;
+    font-size: .8125rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.author1:hover {
+    color: green;
+}
+
+.block1-b-img {
+    width: 100%;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+/*************************************************/
+/* content2 in Row1*/
+/************************************************/
+.content2 {
+    /* border: 1px solid black; */
+    /* background-color: yellow; */
+    padding-top: 5px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* two above properties used to aligin and set his elements (block2-a),(block2-b),(block2-c),(block2-d) in a column*/
+    justify-content: space-between;
+}
+
+/*************************************************/
+/* .block2-a in content2 in Row1*/
+/************************************************/
+.content2 .block2{
+    /* border: 1px solid black; */
+    /* height: 25%; */
+    border-bottom: 1px solid #ddd;
+    transition: 0.25s;
+}
+
+.content2 .block2:hover {
+    opacity: 0.6;
+}
+
+.header-block2 {
+    color: rgb(39, 190, 39);
+    font-size: 0.9em;
+    cursor: pointer;
+    line-height: 2;
+/* to make a botom&to vertical space  */
+}
+
+.block2 h3 {
+    color: #000;
+    font-size: 1.125em;
+    font-weight: 800;
+    line-height: 1.11;
+    letter-spacing: -0.7px;
+    /* margin-top: 4px; */
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.block2 .author2 {
+    /* background-color: yellow; */
+    line-height: 3;
+    color: #333;
+    font-size: .8125rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.block2 .author2:hover {
+    color: rgb(31, 177, 31);
+}
+/*************************************************/
+/* .block2-dif in content2 in Row1*/
+/************************************************/
+.header-block2-dif {
+    color: #dca946;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    line-height: 2;
+/* to make a botom&to vertical space  */
+}
+
+.content2 .block2-dif {
+    transition: 0.25s;
+}
+
+.content2 .block2-dif:hover {
+    opacity: 0.6;
+}
+
+.block2-dif h3 {
+    color: #000;
+    font-size: 1.125em;
+    font-weight: 800;
+    line-height: 1.11;
+    letter-spacing: -0.7px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.block2-dif .author-dif {
+    /* background-color: yellow; */
+    color: #333;
+    font-size: .8125rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.block2-dif .author-dif:hover {
+    color: rgb(31, 177, 31);
+}
+
+.logo2 {
+    width: 30px;
+    height: 15px;
+}
+
+.plus-sign {
+    color: #fdc006;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+/*************************************************/
+/* Row 2*/
+/************************************************/
+.row2 {
+    /* border: 2px dashed red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* to align and set his 2 elements (.row2-title) & (content3) in a column */
+    gap: 25px;
+    /*to make a vertical space btween his 2 elements (.row2-title) (content3),(content4)....(content-checkbox) */
+}
+
+.row2-title {
+    /* border:1px solid black; */
+    font-size: 1.125em;
+    letter-spacing: -0.3px;
+    height: 40px;
+    border-bottom: 2px solid #ddd;
+}
+
+/*************************************************/
+/* content3 in Row 2*/
+/************************************************/
+.content3 {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    /* to align and set his elements (block3-a), (block3-b), (block3-c) next to each other*/
+    justify-content: space-between;
+    transition: 0.25s;
+    border-bottom: 2px solid #ddd;
+}
+
+.content3:hover {
+    opacity: 0.6;
+}
+
+/*************************************************/
+/* block3-a in content3 in Row 2*/
+/************************************************/
+.block3-a {
+    /* border: 1px solid black; */
+    /* background-color: yellow; */
+    width: 30%;
+    padding-bottom: 30px;
+    /* this padding is for moving (border-bottom) a bit more downward ;) */
+}
+
+.block-header {
+    /*aplieid for (block3-a)---- (block10-a*/
+    color: rgb(39, 190, 39);
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.block-h2 {
+    /*aplieid for (block3-a)---- (block10-a*/
+    font-size: 1.36em;
+    /* this value is different for (block-5-a) (block-6-a) <block8-a) <block9-a)  */
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.author-date-time {
+    /*aplieid for (block3-a)---- (block10-a*/
+    line-height: 0.8;
+    /* to adjust the vertical space between (.block-author) & (.date-time) */
+}
+
+.block-author {
+    /*aplieid for (block3-a)---- (block10-a*/
+    color: #333;
+    font-size: .8125rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.block-author:hover {
+    /*aplieid for (block3-a)---- (block10-a*/
+    color: green;
+}
+
+.date-time {
+    /*aplieid for (block3-a)---- (block10-a*/
+    color: #777;
+    font-size: 13px;
+}
+
+.separator {
+    /*aplieid for (block3-a)---- (block10-a*/
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0 2px;
+}
+
+/*************************************************/
+/*block3-b in content3 in Row 2*/
+/************************************************/
+.block3-b {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+    padding-bottom: 30px;
+    /* this padding is for moving (border-bottom) a bit more downward ;) */
+}
+
+.block-paragraph {
+    /*aplieid for (block3-b)---- (block10-b*/
+    color: #777;
+    font-size: 0.9em;
+    line-height: 1.43;
+}
+
+/*************************************************/
+/*block3-c in content3 in Row 2*/
+/************************************************/
+.block3-c {
+    /* border: 1px solid black; */
+    /* background-color: yellow; */
+    width: 30%;
+    cursor: pointer;
+    padding-bottom: 30px;
+    /* this padding is for moving (border-bottom) a bit more downward ;) */
+}
+
+.block-img {
+    /*aplieid for (block3-c)---- (block10-c*/
+    max-width: 100%;
+   
+}
+
+/*************************************************/
+/*content4 in Row 2*/
+/************************************************/
+.content4 {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    /* to align and set his elements (block3-a), (block3-b), (block3-c) next to each other*/
+    justify-content: space-between;
+    transition: 0.25s;
+    border-bottom: 2px solid #ddd;
+}
+
+.content4:hover {
+    opacity: 0.6;
+}
+
+/*************************************************/
+/* block4-a in content4 in Row 2*/
+/************************************************/
+.block4-a {
+    /* border: 1px solid black; */
+    width: 30%;
+    /* background-color: yellow; */
+    padding-bottom: 30px;
+    /* this padding is for moving (border-bottom) a bit more downward ;) */
+
+}
+
+/*************************************************/
+/*block4-b in content4 in Row 2*/
+/************************************************/
+.block4-b {
+    /* border: 1px solid blacsk; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/*block4-c in content4 in Row 2*/
+/************************************************/
+.block4-c {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/*content5 in Row 2*/
+/************************************************/
+.content5 {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    /* to align and set his elements (block5-a), (block5-b), (block5-c) next to each other*/
+    justify-content: space-between;
+    transition: 0.25s;
+    border-bottom: 2px solid #ddd;
+}
+
+.content5:hover {
+    opacity: 0.6;
+}
+
+/*************************************************/
+/* block5-a in content5 in Row 2*/
+/************************************************/
+.block5-a {
+    /* border: 1px solid black; */
+    width: 30%;
+    /* background-color: yellow; */
+    padding-bottom: 30px;
+    /* this padding is for moving (border-bottom) a bit more downward ;) */
+}
+
+.block5-a h2 {
+    font-size: 1.45em;
+    /* to adjust fitting the text */
+}
+
+/*************************************************/
+/*block5-b in content5 in Row 2*/
+/************************************************/
+.block5-b {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/*block5-c in content5 in Row 2*/
+/************************************************/
+.block5-c {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/*    Content6 in Row 2*/
+/************************************************/
+.content6 {
+    /* border: 1x solid black; */
+    width: 100%;
+    display: flex;
+    /* to align and set his elements (block6-a), (block6-b), (block6-c) next to each other*/
+    justify-content: space-between;
+    transition: 0.25s;
+    border-bottom: 2px solid #ddd;
+}
+
+.content6:hover {
+    opacity: 0.6;
+}
+
+/*************************************************/
+/* block6-a in content6 in Row 2*/
+/************************************************/
+.block6-a {
+    /* border: 1px solid black; */
+    width: 30%;
+    /* background-color: yellow; */
+    padding-bottom: 30px;
+    /* this padding is for moving (border-bottom) a bit more downward ;) */
+}
+
+.block6-a h2 {
+    font-size: 1.44em;
+    /* to adjust fitting the text */
+}
+
+/*************************************************/
+/*block6-b in content6 in Row 2*/
+/************************************************/
+.block6-b {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/*block6-c in content6 in Row 2*/
+/************************************************/
+.block6-c {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/*    Content7 in Row 2*/
+/************************************************/
+.content7 {
+    /* border: 1x solid black; */
+    width: 100%;
+    display: flex;
+    /* to align and set his elements (block6-a), (block6-b), (block6-c) next to each other*/
+    justify-content: space-between;
+    transition: 0.25s;
+    border-bottom: 2px solid #ddd;
+}
+
+.content7:hover {
+    opacity: 0.6;
+}
+
+/*************************************************/
+/* block7-a in content7 in Row 2*/
+/************************************************/
+.block7-a {
+    /* border: 1px solid black; */
+    width: 30%;
+    /* background-color: yellow; */
+    padding-bottom: 30px;
+    /* this padding is for moving (border-bottom) a bit more downward ;) */
+}
+
+/*************************************************/
+/*block7-b in content7 in Row 2*/
+/************************************************/
+.block7-b {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/*block7-c in content7 in Row 2*/
+/************************************************/
+.block7-c {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/*    Content8 in Row 2*/
+/************************************************/
+.content8 {
+    /* border: 1x solid black; */
+    width: 100%;
+    display: flex;
+    /* to align and set his elements (block6-a), (block6-b), (block6-c) next to each other*/
+    justify-content: space-between;
+    transition: 0.25s;
+    border-bottom: 2px solid #ddd;
+}
+
+.content8:hover {
+    opacity: 0.6;
+}
+
+/*************************************************/
+/* block8-a in content8 in Row 2*/
+/************************************************/
+.block8-a {
+    /* border: 1px solid black; */
+    width: 30%;
+    /* background-color: yellow; */
+    padding-bottom: 30px;
+    /* this padding is for moving (border-bottom) a bit more downward ;) */
+}
+
+.block8-a h2 {
+    font-size: 1.45em;
+    /* to adjust fitting the text  */
+}
+
+/*************************************************/
+/*block8-b in content8 in Row 2*/
+/************************************************/
+.block8-b {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/*block8-c in content8 in Row 2*/
+/************************************************/
+.block8-c {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/*    Content9 in Row 2*/
+/************************************************/
+.content9 {
+    /* border: 1x solid black; */
+    width: 100%;
+    display: flex;
+    /* to align and set his elements (block6-a), (block6-b), (block6-c) next to each other*/
+    justify-content: space-between;
+    transition: 0.25s;
+    border-bottom: 2px solid #ddd;
+}
+
+.content9:hover {
+    opacity: 0.6;
+}
+
+/*************************************************/
+/* block9-a in content9 in Row 2*/
+/************************************************/
+.block9-a {
+    /* border: 1px solid black; */
+    width: 30%;
+    /* background-color: yellow; */
+    padding-bottom: 30px;
+    /* this padding is for moving (border-bottom) a bit more downward ;) */
+}
+
+.block9-a h2 {
+    font-size: 1.38em;
+    /* to adjust fitting the text */
+}
+
+/*************************************************/
+/*block9-b in content9 in Row 2*/
+/************************************************/
+.block9-b {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/*block9-c in content9 in Row 2*/
+/************************************************/
+.block9-c {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/*    Content10 in Row 2*/
+/************************************************/
+.content10 {
+    /* border: 1x solid black; */
+    width: 100%;
+    display: flex;
+    /* to align and set his elements (block6-a), (block6-b), (block6-c) next to each other*/
+    justify-content: space-between;
+    transition: 0.25s;
+    border-bottom: 2px solid #ddd;
+}
+
+.content10:hover {
+    opacity: 0.6;
+}
+
+/*************************************************/
+/* block10-a in content10  in Row 2*/
+/************************************************/
+.block10-a {
+    /* border: 1px solid black; */
+    width: 30%;
+    /* background-color: yellow; */
+    padding-bottom: 30px;
+    /* this padding is for moving (border-bottom) a bit more downward ;) */
+}
+
+.block10-a h2 {
+    font-size: 1.43em;
+    /* to adjust fitting the text */
+}
+
+/*************************************************/
+/*block10-b  in  content10  in Row 2*/
+/************************************************/
+.block10-b {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/*block10-c  in  content10  in Row 2*/
+/************************************************/
+.block10-c {
+    /* border: 1px solid black; */
+    width: 30%;
+    cursor: pointer;
+}
+
+/*************************************************/
+/* content-checkbox in Row 2*/
+/************************************************/
+.content-checkbox {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* to align and set his elements next to each other (checkbox-A),(checkbox-B),(checkbox-C) */
+    /* margin-bottom: 20px; */
+}
+
+.checkbox-header {
+    /* border: 1px solid blue; */
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.37em;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+}
+
+/*************************************************/
+/* checkbox-A in  content-checkbox  in Row 2*/
+/************************************************/
+.checkbox-A {
+    /* border: 1px solid black; */
+    width: fit-content;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* to give an equal vertical space btw his elements */
+}
+
+/*************************************************/
+/* checkbox-B  in  content-checkbox  in Row 2*/
+/************************************************/
+.checkbox-B {
+    /* border: 1px solid black; */
+    width: fit-content;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* to give an equal vertical space btw his elements */
+}
+
+/*************************************************/
+/* checkbox-C  in  content-checkbox  in Row 2*/
+/************************************************/
+.checkbox-C {
+    /* border: 1px solid black; */
+    width: fit-content;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* to give an equal vertical space btw his elements */
+}
+
+/*************************************************/
+/* creating custom checkbox */
+/************************************************/
+input[type=checkbox],
+label {
+    cursor: pointer;
+    display: flex;
+    /*(display:flex) used to make the given width and height (width:1em)(height:1em) be applied for our new (checkbox)..bcoz (label) is an (inline element) by default,and it is obvious (width) & (height) can't be given to inline elements, that is why by using (display:flex) for (label) we changed his default value to make (W & H)applied on the (label) */
+}
+
+.checkbox-container input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+    /* the 2 above properties used bcoz we wanna hide (the actual input element for the checkbox) bcoz it is not easy to style it across different browsers,therefore we will create our own (checkbox icon) from sctrach */
+}
+
+/* Let's create our new (checkbox icon):-*/
+.checkbox-container label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    /*(display:flex) used to make the given width and height (width:1em)(height:1em) be applied for our new (checkbox)..bcoz (label) is an (inline element) by default,and it is obvious (width) & (height) can't be given to inline elements, that is why by using (display:flex) for (label) we changed his default value to make (W & H)applied on the (label) */
+    margin-right: 5px;
+    /* to make a horizontal space btw our new (checkbox) and (label) */
+}
+
+
+/* below is to change the checkbox's background-color  when we click on(check) itself or label*/
+.checkbox-container input[type='checkbox']:checked+label::before {
+    background-color: #00a562;
+    border-color: #00a562;
+}
+
+.checkbox-container input[type='checkbox']:checked+.orange::before {
+    background-color: orange;
+    border-color: orange;
+}
+
+/* below is to change the text color when checked ;)*/
+.green:checked+label {
+    color: #00a562;
+}
+
+.orange:checked+label {
+    color: orange;
+}
+
+/*************************************************/
+/* content-email-subscribe  in  Row2*/
+/************************************************/
+.content-email-subscribe {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/***********************************************************/
+/* newsletter  in  content-email-subscribe  in Row2*/
+/************************************************************/
+.newsletter {
+    /* border: 1px solid black; */
+    width: 16%;
+    color: #777;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: 1s;
+    /* padding: 20px 0; */
+
+
+}
+
+.newsletter p {
+    display: inline-block;
+    /* to make the his border-bottom length equal to the text length ;) */
+}
+
+.newsletter p:hover {
+    border-bottom: 1.5px solid rgb(25, 167, 79);
+
+}
+
+/***********************************************************/
+/* email  in  content-email-subscribe  in Row2*/
+/************************************************************/
+.email {
+    /* border: 1px solid black; */
+    width: 64%;
+    color: #777;
+    font-size: 0.9em;
+    border-bottom: 1px solid #ddd;
+    /* margin-bottom: 1em; */
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.email span {
+    color: orange;
+}
+
+/***********************************************************/
+/* subscribe-btn  in  content-email-subscribe  in Row2*/
+/************************************************************/
+.subscribe-btn {
+ /* border: 1px solid red; */
+    background-color: #c9d0d6e8;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    padding: 15px 20px;
+}
+/*************************************************/
+/*    Content11 in Row 2*/
+/************************************************/
+.content11 {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    /* to align and set his elements (block6-a), (block6-b), (block6-c) next to each other*/
+    justify-content: space-between;
+    transition: 0.25s;
+    border-bottom: 2px solid #ddd;
+    border-top: 2px solid #ddd;
+}
+
+.content11:hover {
+    opacity: 0.6;
+}
+
+/*************************************************/
+/* block11-a  in  content11   in Row 2*/
+/************************************************/
+.block11-a {
+    /* border: 1px solid black; */
+     /* background-color: yellow; */
+    width: 30%;
+    padding-bottom: 30px;
+    /* this padding is for moving (border-bottom) a bit more downward ;) */
+    padding-top: 30px;
+    /* this padding is for moving (border-top) a bit more upward ;) */
+}
+
+.block11-a h2 {
+    font-size: 1.43em;
+    /* to adjust fitting the text */
+}
+
+/*************************************************/
+/*block11-b  in  content11  in Row 2*/
+/************************************************/
+.block11-b {
+    /* border: 1px solid black; */
+    /* background-color: yellow; */
+    width: 30%;
+    cursor: pointer;
+    padding-top: 30px;
+ /* this padding is for moving (border-top) a bit more upward;) */
+}
+
+/*************************************************/
+/*block11-c  in  content11  in Row 2*/
+/************************************************/
+.block11-c {
+    /* border: 1px solid black; */
+    /* background-color: yellow; */
+    width: 30%;
+    cursor: pointer;
+    padding-top: 30px;
+/* this padding is for moving (border-top) a bit more upward;) */
+}
+
+/***********************************************************/
+/* Content-ticket-title  in  Row2  */
+/************************************************************/
+.content-tecket-title {
+    /* border: 1px solid black; */
+    color: black;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+/***********************************************************/
+/* Content-ticket   in  Row2  */
+/************************************************************/
+.content-ticket {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* to align and set his elements (ticket),(ticket),(ticket) next to each other */
+}
+/***********************************************************/
+/* ticket  in  Content-ticket   in  Row2  */
+/************************************************************/
+.ticket {
+    border: 1px solid #ddd;
+    width: 28%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+
+}
+
+/******************************************************************/
+/* san-frasisco  in   ticket  in  Content-ticket   in  Row2  */
+/******************************************************************/
+.san-frasisco {
+    /* border: 1px solid rgb(228, 121, 22); */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.san-frasisco h3 {
+    background: linear-gradient(135deg, rgb(18, 185, 40) 0%, rgb(39, 201, 141) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.6em;
+    font-weight: 800;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+
+.san-frasisco h4 {
+    font-weight: 800;
+}
+
+.san-frasisco .san {
+    color: #999;
+    line-height: 1.43;
+}
+
+.short-line {
+/* border:1px solid black; */
+width:fit-content;
+border-top: 4px solid rgb(33, 175, 33);
+}
+
+.invisible {
+opacity: 0; 
+}
+
+/******************************************************************/
+/* ticket-btn in   ticket  in  Content-ticket   in  Row2  */
+/******************************************************************/
+.ticket-btn {
+    border: 2px solid rgb(58, 240, 58);
+    width: 90%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, rgb(18, 211, 44) 0%, rgb(57, 196, 145) 100%);
+    cursor: pointer;
+}
+/******************************************************************/
+/* sponsor-btn in   ticket  in  Content-ticket   in  Row2  */
+/******************************************************************/
+.sponsor-btn {
+    border: 2px solid black;
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+
+.sponsor-btn:hover {
+    background-color: black;
+    color: white;
+}
+/******************************************************************/
+/* content-load.more    in  Row2  */
+/******************************************************************/
+.content-load-more {
+    /* border:1px solid black; */
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.375em;
+    font-weight: 800;
+    border-top: 2px solid #ddd;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.content-load-more:hover {
+    background-color: #f0eeee;
+}
+
+.loadmore {
+    background: linear-gradient(130deg, rgb(18, 185, 40) 0%, rgb(39, 201, 141) 100%);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent; 
+}
+/***************************************************/
+/* footer in body*/
+/***************************************************/
+.footer {
+    /* border: 2px dashed black; */
+    /* background-color: pink; */
+    border-top: 2px solid #ddd;
+    /* to makea vertical space with main-container */
+    padding-top: 20px;
+    /* to make a space between border-top and elements */
+    width: 83.5%;
+    /* height: 60vh; */
+    margin-left: 16%;
+    margin-top: 80px;
+    display: flex;
+    gap:220px
+    /* to align and set his elements (footer-menue-container1),(footer-menue-container2) next to each other */
+
+}
+/*******************************************************/
+/*  footer-menue-container1  in  footer  in   body*/
+/*******************************************************/
+.footer-menue-container1 {
+    /* border: 1px solid black; */
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menue {
+    /* border:1px solid black; */
+    /* background-color: aliceblue; */
+    width:fit-content;
+    height: fit-content;
+}
+
+.footer-menue ul {
+    /* border: 1px solid black; */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menue ul li {
+    padding: 5px 0;
+    /* to give a vertical space between words */
+}
+
+.footer-menue ul li a {
+    /* background-color: yellow; */
+    text-decoration: none;
+    color: grey;
+}
+
+.footer-menue ul li a:hover {
+    text-decoration: underline;
+}
+
+.list-header {
+    font-weight: bold;
+}
+/*******************************************************/
+/*  footer-menue-container2  in  footer  in   body*/
+/*******************************************************/
+.footer-menue-container2 {
+    /* border: 1px solid black; */
+    width:40%;
+    height: fit-content;
+    display: flex;
+    gap:50px;
+
+}
+/***************************************************************/
+/*  Part1 in   footer-menue-container2  in  footer  in   body*/
+/***************************************************************/
+.part1 {
+    /* background-color: greenyellow; */
+    width: fit-content;
+    height: fit-content;
+}
+
+.part1 ul {
+    list-style: none;
+}
+
+.part1 ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.part1 ul li {
+    display: flex;
+
+}
+
+.fa-facebook-f,
+.fa-youtube,
+.fa-linkedin-in  {
+    color: rgb(44, 43, 43);
+}
+/* ****************************/
+.fa-facebook-f{
+    padding-left: 8px;
+    /* to align with youtube logo ;) */
+}
+
+.facebook:hover {
+    .fa-facebook-f {
+        color: rgb(9, 125, 233);
+    }
+}
+/* *********************************/
+.fa-linkedin-in {
+padding-left: 4px;
+/* to align with youtube logo ;) */
+}
+
+.linkedin:hover {
+    .fa-linkedin-in {
+        color:rgb(19, 166, 235)
+    }
+}
+/* ************************************* */
+.fa-youtube {
+    margin:25px 0;
+/* to make a vertical space with his top & bottom siblings */
+}
+
+.Youtube:hover {
+    .fa-youtube {
+        color:red
+    }
+}
+/* ************************** */
+.text {
+    margin-left: 20px;
+    /* to make a horizontal space between icon and text */
+}
+/***************************************************************/
+/*  Part2 in   footer-menue-container2  in  footer  in   body*/
+/***************************************************************/
+.part2 {
+    /* background-color: rgb(236, 146, 221); */
+    width: fit-content;
+    height: fit-content;
+}
+
+.part2 ul {
+    list-style: none;
+}
+
+.part2 ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.part2 ul li {
+    display: flex;
+}
+
+.fa-x-twitter,
+.fa-instagram,
+.fa-mastodon {
+    color: rgb(44, 43, 43);
+}
+
+.instagram:hover {
+    .fa-instagram {
+        color: rgb(196, 58, 196);
+    }
+}
+
+.fa-instagram {
+    margin: 25px 0;
+/* to make a vertical space with his top & bottom siblings */
+}
+/* 888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 */
+/* 88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 */
+/* 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 */
+/* 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 */
+@media screen and (max-width: 480px) {
+    /* Remove entire navbar-container */
+    .navbar-container {
+        display: none;
+    }
+
+    .nav-logo-box {
+        display: none;
+    }
+
+    .reklam {
+        display: none;
+    }
+ /*************************************************/
+/* main-container  in  hero */
+/************************************************/
+.main-container {
+    border:2px solid blue;
+    width: 100%;
+}
+/*************************************************/
+/* content-container in main-container */
+/************************************************/
+.content-container {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* to allign and set his elements (Rows) in a column */
+}
+/*************************************************/
+/* Row1 in content-container */
+/************************************************/
+.row1 {
+   flex-direction: column;
+}
+/*************************************************/
+/* content1 in Row1*/
+/************************************************/
+.content1 {
+    border: 1px solid red;
+    width: 90%;
+    margin:0 auto;
+}
+
+.block1-a h2 {
+    font-size: 1em;
+    line-height: 0.8;
+}
+
+.block1-a h3 {
+    font-size: 1em;
+    line-height: 0.9;
+}
+
+.block1-b-img {
+    max-width: 100%;
+}
+/*************************************************/
+/* content2 in Row1*/
+/************************************************/
+.content2 {
+    border: 1px solid red;
+    width: 90%;
+    display: flex;
+    margin:0 auto
+}
+/*************************************************/
+/* .block2-a in content2 in Row1*/
+/************************************************/
+.block2 h3 {
+    font-size: 1em;
+    font-weight: 800;
+    line-height: 1;
+}
+/*************************************************/
+/* .block2-dif in content2 in Row1*/
+/************************************************/
+.block2-dif h3 {
+    font-size: 1.125em;
+    font-weight: 800;
+    line-height: 1.11;
+    letter-spacing: -0.7px;
+}
+
+.block2-dif .author-dif {
+    font-size: .8125rem;
+    font-weight: 700;
+}
+/*************************************************/
+/* Row 2*/
+/************************************************/
+.row2 {
+    border: 1px dashed red;
+    width: 90%;
+    margin:0 auto;
+}
+/*************************************************/
+/* block3-a in content3 in Row 2*/
+/************************************************/
+.block3-a {
+    width: 58%;
+    /* it was 30% */
+}
+
+.block-h2 {
+/* allplied to all contents that is why i use this once , but for a few blocks like (block5-a) and (block6-a) (block8-a) (block10-a)i copy paste it since i already gave a different font-size to adjust fitting the text ;) */
+    font-size: 1.1em;
+    font-weight: 800;
+    line-height: 1;
+}
+/*************************************************/
+/*block3-b in content3 in Row 2*/
+/************************************************/
+.block3-b {
+    display: none;
+    /* to be able use his space for (block3-a) and (block3-c) ;)  we have to do this for all other contents ;) think about it and u will get it ;)*/
+}
+/*************************************************/
+/*block3-c in content3 in Row 2*/
+/************************************************/
+.block3-c {
+    width: 38%;
+    /* it was 30% */
+}
+/*************************************************/
+/* block4-a in content4 in Row 2*/
+/************************************************/
+.block4-a {
+    width: 58%;
+    /* it was 30% */
+}
+
+/*************************************************/
+/*block4-b in content3 in Row 2*/
+/************************************************/
+.block4-b {
+    display: none;
+    /* to be able to use his space for (block4-a) and (block4-c) ;)  we have to do this for all other contents ;) think about it and u will get it ;)*/
+}
+/*************************************************/
+/*block4-c in content4 in Row 2*/
+/************************************************/
+.block4-c {
+    width: 38%;
+    /* it was 30% */
+}
+/*************************************************/
+/* block5-a in content5 in Row 2*/
+/************************************************/
+.block5-a {
+    width: 58%;
+    /* it was 30% */
+}
+.block5-a h2 {
+    font-size: 1.1em;
+    font-weight: 800;
+    line-height: 1;
+}
+/*************************************************/
+/*block5-b in content5 in Row 2*/
+/************************************************/
+.block5-b {
+    display: none;
+    /* to be able to use his space for (block5-a) and (block5-c) ;)  we have to do this for all other contents ;) think about it and u will get it ;)*/
+}
+
+/*************************************************/
+/*block5-c in content5 in Row 2*/
+/************************************************/
+.block5-c {
+    width: 38%;
+    /* it was 30% */
+}
+/*************************************************/
+/* block6-a in content6 in Row 2*/
+/************************************************/
+.block6-a {
+    width: 58%;
+    /* it was 30% */
+}
+.block6-a h2 {
+    font-size: 1.1em;
+    font-weight: 800;
+    line-height: 1;
+}
+/*************************************************/
+/*block6-b in content6 in Row 2*/
+/************************************************/
+.block6-b {
+    display: none;
+    /* to be able to use his space for (block6-a) and (block6-c) ;)  we have to do this for all other contents ;) think about it and u will get it ;)*/
+}
+/*************************************************/
+/*block6-c in content6 in Row 2*/
+/************************************************/
+.block6-c {
+    width: 38%;
+    /* it was 30% */
+}
+/*************************************************/
+/* block7-a in content7 in Row 2*/
+/************************************************/
+.block7-a {
+    width: 58%;
+    /* it was 30% */
+}
+/*************************************************/
+/*block7-b in content7 in Row 2*/
+/************************************************/
+.block7-b {
+    display: none;
+    /* to be able to use his space for (block7-a) and (block7-c) ;)  we have to do this for all other contents ;) think about it and u will get it ;)*/
+}
+/*************************************************/
+/*block7-c in content7 in Row 2*/
+/************************************************/
+.block7-c {
+    width: 38%;
+    /* it was 30% */
+}
+/*************************************************/
+/* block8-a in content8 in Row 2*/
+/************************************************/
+.block8-a {
+    width: 58%;
+    /* it was 30% */
+}
+.block8-a h2 {
+    font-size: 1.1em;
+    font-weight: 800;
+    line-height: 1;
+}
+/*************************************************/
+/*block8-b in content8 in Row 2*/
+/************************************************/
+.block8-b {
+    display: none;
+    /* to be able to use his space for (block8-a) and (block8-c) ;)  we have to do this for all other contents ;) think about it and u will get it ;)*/
+}
+/*************************************************/
+/*block8-c in content8 in Row 2*/
+/************************************************/
+.block8-c {
+    width: 38%;
+    /* it was 30% */
+}
+/*************************************************/
+/* block9-a in content9 in Row 2*/
+/************************************************/
+.block9-a {
+    width: 58%;
+    /* it was 30% */
+}
+.block9-a h2 {
+    font-size: 1.1em;
+    font-weight: 800;
+    line-height: 1;
+}
+/*************************************************/
+/*block9-b in content9 in Row 2*/
+/************************************************/
+.block9-b {
+    display: none;
+    /* to be able to use his space for (block9-a) and (block9-c) ;)  we have to do this for all other contents ;) think about it and u will get it ;)*/
+}
+/*************************************************/
+/*block9-c in content9 in Row 2*/
+/************************************************/
+.block9-c {
+    width: 38%;
+    /* it was 30% */
+}
+/*************************************************/
+/* block10-a in content10  in Row 2*/
+/************************************************/
+.block10-a {
+    width: 58%;
+    /* it was 30% */
+}
+.block10-a h2 {
+    font-size: 1.1em;
+    font-weight: 800;
+    line-height: 1;
+}
+/*************************************************/
+/*block10-b  in  content10  in Row 2*/
+/************************************************/
+.block10-b {
+    display: none;
+    /* to be able to use his space for (block9-a) and (block9-c) ;)  we have to do this for all other contents ;) think about it and u will get it ;)*/
+}
+/*************************************************/
+/*block10-c  in  content10  in Row 2*/
+/************************************************/
+.block10-c {
+    width: 38%;
+    /* it was 30% */
+}
+
+
+}
